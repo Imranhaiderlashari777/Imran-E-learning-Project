@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_reviews",
+  "info": {
+    "singularName": "course-review",
+    "pluralName": "course-reviews",
+    "displayName": "Course_Review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Rating": {
+      "type": "integer"
+    },
+    "Comment": {
+      "type": "text"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "course_reviews"
+    }
+  }
+}

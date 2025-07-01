@@ -1,0 +1,36 @@
+{
+  "name": "e-learning-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.12.7",
+    "@strapi/plugin-users-permissions": "^5.12.7",
+    "@strapi/provider-upload-cloudinary": "^5.12.7",
+    "@strapi/strapi": "5.12.7",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "ddd7da32-43cc-4fb6-b622-223bdbd9654a",
+    "installId": "18042d1441a3c6dee535389624480ca42ab482c743a582edf3342925ead5a8df"
+  }
+}

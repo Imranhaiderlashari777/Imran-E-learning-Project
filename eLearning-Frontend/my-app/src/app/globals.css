@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Custom dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+/* Custom Sonner Toast */
+.custom-toast {
+  background: #00b24d !important; /* Dark gray */
+  color: #fff !important;
+  padding: 18px 20px !important;
+  font-size: 17px !important;
+  border-radius: 12px !important;
+  max-width: 400px;
+  border: 0px !important;
+}
+
+/* Custom Error Toast */
+.custom-error-toast {
+  background-color: #ff4d4f !important; /* Red background */
+}
+/* Add to your CSS or Tailwind CSS file */
+.course-card {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.course-rating {
+  font-size: 1rem;
+  color: #f59e0b; /* Star color */
+}
+
+.learn-more-btn {
+  margin-top: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #2563eb;
+}

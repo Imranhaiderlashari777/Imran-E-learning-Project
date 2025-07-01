@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_categories",
+  "info": {
+    "singularName": "course-category",
+    "pluralName": "course-categories",
+    "displayName": "Course_Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Category_Name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Category_Name"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "course_category"
+    }
+  }
+}
